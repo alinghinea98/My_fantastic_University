@@ -14,7 +14,8 @@
         <activity android:name=".ExamsActivity" />
         <activity android:name=".OrarActivity" />
         <activity android:name=".MapActivity" />
-        <activity android:name=".DashboardActivity" />
+        <activity android:name=".DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
