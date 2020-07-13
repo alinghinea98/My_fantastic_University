@@ -5,5 +5,7 @@
     <string name="harta">Harta</string>
     <string name="chat">Chat</string>
     <string name="examene">Examene</string>
+    <string name="send">Send</string>
+    <string name="introdu_mesajul_tau">Introdu mesajul tau</string>
     <string name="Profil">Profil</string>
 </resources>
