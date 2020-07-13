@@ -21,10 +21,23 @@ public class DashboardActivity extends AppCompatActivity {
                 goToOrar();
             }
         });
+
+        CardView cardViewChat = findViewById(R.id.cardviewChat);
+        cardViewChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToChat();
+            }
+        });
     }
 
     private void goToOrar() {
         Intent intent = new Intent(DashboardActivity.this, OrarActivity.class);
         startActivity(intent);
+    }
+    private void goToChat(){
+        Intent intent_chat = new Intent(DashboardActivity.this,
+                ChatActivity.class);
+        startActivity(intent_chat);
     }
 }
