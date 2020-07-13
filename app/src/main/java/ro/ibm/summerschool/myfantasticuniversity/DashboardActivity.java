@@ -14,12 +14,14 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        CardView cardviewOrar = findViewById(R.id.cardviewOrar);
-        cardviewOrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                goToOrar();
-            }
+            CardView cardviewExams = findViewById(R.id.cardviewExamene);
+        cardviewExams.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    goToExams();
+                }
+
+
         });
 
         CardView cardViewChat = findViewById(R.id.cardviewChat);
@@ -31,8 +33,8 @@ public class DashboardActivity extends AppCompatActivity {
         });
     }
 
-    private void goToOrar() {
-        Intent intent = new Intent(DashboardActivity.this, OrarActivity.class);
+    private void goToExams() {
+        Intent intent = new Intent(DashboardActivity.this, ExamsActivity.class);
         startActivity(intent);
     }
     private void goToChat(){

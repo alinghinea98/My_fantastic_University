@@ -5,6 +5,16 @@
     <string name="harta">Harta</string>
     <string name="chat">Chat</string>
     <string name="examene">Examene</string>
+    <string name="exam_text">exam_text</string>
+    <string name="denumirea_cursului">Denumirea cursului</string>
+    <string name="data_si_ora">Data si ora:</string>
+    <string name="sala">Sala:</string>
+    <string name="nume_profesor">Nume profesor:</string>
+    <string name="nametextview">nameTextView</string>
+    <string name="datetime">datetime</string>
+    <string name="name">name</string>
+    <string name="classroom">classroom</string>
+    <string name="exam">Exam</string>
     <string name="send">Send</string>
     <string name="introdu_mesajul_tau">Introdu mesajul tau</string>
     <string name="Profil">Profil</string>
