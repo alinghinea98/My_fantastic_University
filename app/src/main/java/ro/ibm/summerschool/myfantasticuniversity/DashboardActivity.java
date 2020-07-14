@@ -21,10 +21,22 @@ public class DashboardActivity extends AppCompatActivity {
                 goToOrar();
             }
         });
+
+        CardView cardViewProfil = findViewById((R.id.cardviewProfil));
+        cardViewProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToProfile();
+            }
+        });
     }
 
     private void goToOrar() {
         Intent intent = new Intent(DashboardActivity.this, OrarActivity.class);
+        startActivity(intent);
+    }
+    private void goToProfile() {
+        Intent intent = new Intent(DashboardActivity.this, MyProfileActivity.class);
         startActivity(intent);
     }
 }
