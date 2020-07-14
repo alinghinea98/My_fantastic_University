@@ -1,11 +1,13 @@
 package ro.ibm.summerschool.myfantasticuniversity;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
+import ro.ibm.summerschool.myfantasticuniversity.orar.OrarActivity;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -31,6 +33,14 @@ public class DashboardActivity extends AppCompatActivity {
                 goToChat();
             }
         });
+
+        CardView cardViewOrar = findViewById(R.id.cardviewOrar);
+        cardViewOrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToOrar();
+            }
+        });
     }
 
     private void goToExams() {
@@ -41,5 +51,10 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent_chat = new Intent(DashboardActivity.this,
                 ChatActivity.class);
         startActivity(intent_chat);
+    }
+
+    private void goToOrar() {
+        Intent intentOrar = new Intent(DashboardActivity.this, OrarActivity.class);
+        startActivity(intentOrar);
     }
 }
