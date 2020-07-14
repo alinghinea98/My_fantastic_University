@@ -5,6 +5,12 @@
     <string name="harta">Harta</string>
     <string name="chat">Chat</string>
     <string name="examene">Examene</string>
+    <string name="Nume_utilizator">Nume utilizator</string>
+    <string name="Setari">Setari cont</string>
+    <string name="notificatii">Notificări</string>
+    <string name="Adauga_cont">Adaugă cont</string>
+    <string name="ajutor">Ajutor</string>
+    <string name="Logout">Ieșire</string>
     <string name="exam_text">exam_text</string>
     <string name="denumirea_cursului">Denumirea cursului</string>
     <string name="data_si_ora">Data si ora:</string>

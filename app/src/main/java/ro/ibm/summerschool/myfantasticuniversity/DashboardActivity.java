@@ -41,12 +41,25 @@ public class DashboardActivity extends AppCompatActivity {
                 goToOrar();
             }
         });
+
+        CardView cardViewProfil = findViewById((R.id.cardviewProfil));
+        cardViewProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToProfile();
+            }
+        });
     }
 
     private void goToExams() {
         Intent intent = new Intent(DashboardActivity.this, ExamsActivity.class);
         startActivity(intent);
     }
+
+    private void goToProfile() {
+        Intent intent = new Intent(DashboardActivity.this, MyProfileActivity.class);
+        startActivity(intent);
+
     private void goToChat(){
         Intent intent_chat = new Intent(DashboardActivity.this,
                 ChatActivity.class);
@@ -56,5 +69,6 @@ public class DashboardActivity extends AppCompatActivity {
     private void goToOrar() {
         Intent intentOrar = new Intent(DashboardActivity.this, OrarActivity.class);
         startActivity(intentOrar);
+
     }
 }
