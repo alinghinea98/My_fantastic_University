@@ -18,4 +18,6 @@
     <string name="send">Send</string>
     <string name="introdu_mesajul_tau">Introdu mesajul tau</string>
     <string name="Profil">Profil</string>
+    <string name="day_name_placeholder">Luni</string>
+    <string name="week_number_placeholder">Saptamana 27</string>
 </resources>
