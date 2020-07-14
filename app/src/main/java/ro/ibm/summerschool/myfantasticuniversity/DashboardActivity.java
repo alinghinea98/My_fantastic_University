@@ -59,6 +59,7 @@ public class DashboardActivity extends AppCompatActivity {
     private void goToProfile() {
         Intent intent = new Intent(DashboardActivity.this, MyProfileActivity.class);
         startActivity(intent);
+    }
 
     private void goToChat(){
         Intent intent_chat = new Intent(DashboardActivity.this,
