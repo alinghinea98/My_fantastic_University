@@ -5,6 +5,24 @@
     <string name="harta">Harta</string>
     <string name="chat">Chat</string>
     <string name="examene">Examene</string>
+    <string name="Nume_utilizator">Nume utilizator</string>
+    <string name="Setari">Setari cont</string>
+    <string name="notificatii">Notificări</string>
+    <string name="Adauga_cont">Adaugă cont</string>
+    <string name="ajutor">Ajutor</string>
+    <string name="Logout">Ieșire</string>
+    <string name="exam_text">exam_text</string>
+    <string name="denumirea_cursului">Denumirea cursului</string>
+    <string name="data_si_ora">Data si ora:</string>
+    <string name="sala">Sala:</string>
+    <string name="nume_profesor">Nume profesor:</string>
+    <string name="nametextview">nameTextView</string>
+    <string name="datetime">datetime</string>
+    <string name="name">name</string>
+    <string name="classroom">classroom</string>
+    <string name="exam">Exam</string>
+    <string name="send">Send</string>
+    <string name="introdu_mesajul_tau">Introdu mesajul tau</string>
     <string name="Profil">Profil</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -18,4 +36,6 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="day_name_placeholder">Luni</string>
+    <string name="week_number_placeholder">Saptamana 27</string>
 </resources>
