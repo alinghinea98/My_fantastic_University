@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import ro.ibm.summerschool.myfantasticuniversity.chat.ChatActivity;
+import ro.ibm.summerschool.myfantasticuniversity.chat.ContactsActivity;
+
 public class DashboardActivity extends AppCompatActivity {
 
     @Override
@@ -26,7 +29,7 @@ public class DashboardActivity extends AppCompatActivity {
         cardViewChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                goToChat();
+                goToContactsList();
             }
         });
     }
@@ -35,9 +38,8 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent = new Intent(DashboardActivity.this, OrarActivity.class);
         startActivity(intent);
     }
-    private void goToChat(){
-        Intent intent_chat = new Intent(DashboardActivity.this,
-                ChatActivity.class);
-        startActivity(intent_chat);
+    private void goToContactsList(){
+        Intent intentContacts = new Intent(DashboardActivity.this, ContactsActivity.class);
+        startActivity(intentContacts);
     }
 }

@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".chat.ContactsActivity"></activity>
+        <activity android:name=".chat.ChatActivity" />
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".ExamsActivity" />
         <activity android:name=".OrarActivity" />
         <activity android:name=".MapActivity" />
-        <activity android:name=".DashboardActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".DashboardActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

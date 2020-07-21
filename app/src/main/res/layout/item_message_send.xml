@@ -6,7 +6,7 @@
 <!--    <data>-->
 <!--        <variable-->
 <!--            name="message"-->
-<!--            type="ro.ibm.summerschool.myfantasticuniversity.Message" />-->
+<!--            type="ro.ibm.summerschool.myfantasticuniversity.chat.Message" />-->
 <!--    </data>-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/text_message_time"
+            android:id="@+id/text_message_time_s"
             android:text="11:40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
