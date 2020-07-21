@@ -59,14 +59,14 @@ public class DashboardActivity extends AppCompatActivity {
     private void goToProfile() {
         Intent intent = new Intent(DashboardActivity.this, MyProfileActivity.class);
         startActivity(intent);
-
-    private void goToChat(){
-        Intent intent_chat = new Intent(DashboardActivity.this,
-                ChatActivity.class);
-        startActivity(intent_chat);
     }
 
-    private void goToOrar() {
+        private void goToChat() {
+            Intent intent_chat = new Intent(DashboardActivity.this, ChatActivity.class);
+            startActivity(intent_chat);
+        }
+
+        private void goToOrar() {
         Intent intentOrar = new Intent(DashboardActivity.this, OrarActivity.class);
         startActivity(intentOrar);
 
