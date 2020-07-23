@@ -1,14 +1,14 @@
 package ro.ibm.summerschool.myfantasticuniversity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class LaunchActivity extends AppCompatActivity {
 
-    public static int Load = 1000;
+    public static final int LOAD = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,6 @@ public class LaunchActivity extends AppCompatActivity {
                 startActivity(homeIntent);
                 finish();
             }
-        },Load);
+        },LOAD);
     }
 }
