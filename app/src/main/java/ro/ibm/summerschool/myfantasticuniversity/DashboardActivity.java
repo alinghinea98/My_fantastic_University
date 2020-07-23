@@ -1,24 +1,19 @@
 package ro.ibm.summerschool.myfantasticuniversity;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Gravity;
-import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
+import com.google.android.material.navigation.NavigationView;
 
 import ro.ibm.summerschool.myfantasticuniversity.orar.OrarActivity;
-
-//import android.widget.Toolbar;
-import com.google.android.material.navigation.NavigationView;
-import androidx.appcompat.widget.Toolbar;
 
 
 public class DashboardActivity extends AppCompatActivity {
@@ -44,12 +39,12 @@ public class DashboardActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-            CardView cardviewExams = findViewById(R.id.cardviewExamene);
+        CardView cardviewExams = findViewById(R.id.cardviewExamene);
         cardviewExams.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    goToExams();
-                }
+            @Override
+            public void onClick(View view) {
+                goToExams();
+            }
 
 
         });
@@ -85,8 +80,8 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
 
-    public void OnBackPressed(){
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)) {
+    public void OnBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
@@ -94,14 +89,12 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
 
-
-
     private void goToProfile() {
         Intent intent = new Intent(DashboardActivity.this, MyProfileActivity.class);
         startActivity(intent);
     }
 
-    private void goToChat(){
+    private void goToChat() {
         Intent intent_chat = new Intent(DashboardActivity.this,
                 ChatActivity.class);
         startActivity(intent_chat);
