@@ -11,7 +11,6 @@ import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.google.android.material.navigation.NavigationView;
 
 import ro.ibm.summerschool.myfantasticuniversity.orar.OrarActivity;
 
@@ -22,7 +21,6 @@ import ro.ibm.summerschool.myfantasticuniversity.chat.ContactsActivity;
 public class DashboardActivity extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
-    NavigationView navigationView;
     Toolbar toolbar;
 
 
@@ -35,7 +33,7 @@ public class DashboardActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
+
         toolbar = findViewById(R.id.toolbar);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -105,7 +103,7 @@ public class DashboardActivity extends AppCompatActivity {
     private void goToOrar() {
         Intent intentOrar = new Intent(DashboardActivity.this, OrarActivity.class);
         startActivity(intentOrar);
-
+    }
     private void goToContactsList(){
         Intent intentContacts = new Intent(DashboardActivity.this, ContactsActivity.class);
         startActivity(intentContacts);

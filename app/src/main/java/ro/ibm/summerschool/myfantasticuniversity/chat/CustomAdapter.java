@@ -34,14 +34,15 @@ public class CustomAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             super(itemView);
             message_field = itemView.findViewById(R.id.text_message_body_r);
             date_field = itemView.findViewById(R.id.text_message_time_r);
-//            nameText =  itemView.findViewById(R.id.text_message_name);
+            nameText =  itemView.findViewById(R.id.text_message_name_r);
 //            profileImage =  itemView.findViewById(R.id.image_message_profile);
         }
         void bind(int position) {
             MessageModel messageModel = list.get(position);
             message_field.setText(messageModel.message);
             date_field.setText(DateFormat.getTimeInstance(DateFormat.SHORT).format(messageModel.messageTime));
-            //nameText.setText(messageModel.getSender().getContactName());
+            nameText.setText(messageModel.getSender().getContactName());
+
             //de bind uit si profile image
         }
     }
@@ -72,6 +73,8 @@ public class CustomAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+
+
         if (list.get(position).messageType == MESSAGE_TYPE_IN) {
             ((MessageInViewHolder) holder).bind(position);
         } else {

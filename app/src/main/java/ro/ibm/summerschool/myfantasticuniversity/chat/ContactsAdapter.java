@@ -28,8 +28,6 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MovieV
     }
 
 
-
-
     @NonNull
     @Override
     public MovieVH onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -40,15 +38,15 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.MovieV
     @Override
     public void onBindViewHolder(@NonNull final MovieVH holder, final int position) {
        holder.description.setText(contacts.get(position).getDescription());
-
        holder.contactName.setText(contacts.get(position).getContactName());
+
        holder.setItemClickListener(new ItemClickListener() {
            @Override
            public void OnItemClickListener(View v, int layoutPosition) {
                String sDescription=contacts.get(position).getDescription();
                String sContactName=contacts.get(position).getContactName();
                Intent intent = new Intent(holder.description.getContext(),ChatActivity.class);
-               intent.putExtra("icontactname",sContactName);
+               intent.putExtra("icontactname",contacts.get(position));
                holder.description.getContext().startActivity(intent);
            }
        });

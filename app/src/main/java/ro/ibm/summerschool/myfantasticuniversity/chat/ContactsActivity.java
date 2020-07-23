@@ -4,10 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
+import ro.ibm.summerschool.myfantasticuniversity.DashboardActivity;
 import ro.ibm.summerschool.myfantasticuniversity.R;
 
 public class ContactsActivity extends AppCompatActivity {
@@ -22,6 +27,15 @@ public class ContactsActivity extends AppCompatActivity {
 
         mRecyclerView = findViewById(R.id.recyclerView_contacts);
         getMyList();
+
+       /* Button btn_chat_to_contacts = findViewById(R.id.btn_contacts_to_dashb);
+        btn_chat_to_contacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBackToDashboard();
+            }
+
+        });*/
     }
 
     private void getMyList(){
@@ -40,5 +54,11 @@ public class ContactsActivity extends AppCompatActivity {
         contactsAdapter = new ContactsAdapter(contacts);
         mRecyclerView.setAdapter(contactsAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+
     }
+
+    /*private void goBackToDashboard() {
+        Intent intentContactsToDashB = new Intent(ContactsActivity.this, DashboardActivity.class);
+        startActivity(intentContactsToDashB);
+    }*/
 }

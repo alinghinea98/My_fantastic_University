@@ -1,9 +1,11 @@
 package ro.ibm.summerschool.myfantasticuniversity.chat;
 
-public class Contact extends Message {
+import java.io.Serializable;
 
-    private String contactName;
-    private String description;
+public class Contact implements Serializable {
+
+     String contactName;
+     String description;
 
     String profileUrl;
     Integer ContactId;
@@ -45,14 +47,4 @@ public class Contact extends Message {
 //        this.description = description;
 //    }
 
-
-    @Override
-    public String toString() {
-        return "Contact{" +
-                "contactName='" + contactName + '\'' +
-                ", description='" + description + '\'' +
-                ", profileUrl='" + profileUrl + '\'' +
-                ", ContactId=" + ContactId +
-                '}';
-    }
 }

@@ -16,12 +16,11 @@
         <activity android:name=".chat.ChatActivity" />
         <activity android:name=".MyProfileActivity" />
         <activity android:name=".ExamsActivity" />
-        <activity android:name=".OrarActivity" />
         <activity android:name=".MapActivity" />
         <activity
             android:name=".DashboardActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"/>
         <activity android:name=".LaunchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,15 +29,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".orar.ZiActivity" />
-        <activity android:name=".ChatActivity" />
-        <activity android:name=".MyProfileActivity" />
-        <activity android:name=".ExamsActivity" />
         <activity android:name=".orar.OrarActivity" />
-        <activity android:name=".MapActivity" />
-        <activity
-            android:name=".DashboardActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".LoginActivity"></activity>
+
     </application>
 
 </manifest>

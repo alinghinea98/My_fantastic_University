@@ -9,10 +9,14 @@ public class MessageModel {
     Contact sender;
     public Date messageTime = new Date();
     // Constructor
-    public MessageModel(String message, int messageType) {
+    public MessageModel(String message, int messageType, Contact sender) {
         this.message = message;
         this.messageType = messageType;
+        this.sender=sender;
     }
+
+
+
 
     public String getMessage() {
         return message;
