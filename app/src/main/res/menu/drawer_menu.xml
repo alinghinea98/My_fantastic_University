@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+ <group android:checkableBehavior="single">
+     <item android:id="@+id/drawer_orar"
+           android:icon="@drawable/ic_orar"
+           android:title="Orar"/>
+
+     <item android:id="@+id/drawer_harta"
+         android:icon="@drawable/ic_harta"
+         android:title="Harta"/>
+
+     <item android:id="@+id/drawer_chat"
+         android:icon="@drawable/ic_chat"
+         android:title="Chat"/>
+
+     <item android:id="@+id/drawer_examene"
+         android:icon="@drawable/ic_examene"
+         android:title="Examene"/>
+
+     <item android:id="@+id/drawer_profil"
+         android:icon="@drawable/ic_profil"
+         android:title="Profil"/>
+ </group>
+</menu>
