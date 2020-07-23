@@ -58,4 +58,6 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="day_name_placeholder">Luni</string>
     <string name="week_number_placeholder">Saptamana 27</string>
+    <string name="Welcome">Welcome</string>
+    <string name="Unitbv">UNITBV</string>
 </resources>

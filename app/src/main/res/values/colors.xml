@@ -14,5 +14,6 @@
     <color name="cmov">#8E24AA</color>
     <color name="calbastru">#1E88E5</color>
     <color name="cgalben">#FDD835</color>
+    <color name="transparent">#00000000</color>
 
 </resources>
