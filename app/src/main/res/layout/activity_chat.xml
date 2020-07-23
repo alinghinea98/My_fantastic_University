@@ -8,11 +8,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
+       <!-- <Button
+            android:id="@+id/btn_chat_to_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            app:layout_constraintBottom_toTopOf="@id/recyclerView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="0dp"
-            tools:listitem="@layout/item_message_receive"
+            tools:listitem="@layout/item_message_send"
             tools:itemCount="5"
 
             android:layout_height="0dp"

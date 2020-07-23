@@ -20,7 +20,7 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
 
         <TextView
-            android:id="@+id/text_message_name"
+            android:id="@+id/text_message_name_r"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nume Prof."
@@ -37,13 +37,13 @@
             android:background="@drawable/bg_received_message"
             android:padding="16dp"
             android:textColor="@android:color/white"
-            app:layout_constraintTop_toBottomOf="@id/text_message_name"
+            app:layout_constraintTop_toBottomOf="@id/text_message_name_r"
             app:layout_constraintLeft_toRightOf="@id/image_message_profile"
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:text="Salut. Mesaj 2 generat automat"/>
         <TextView
-            android:id="@+id/text_message_time"
+            android:id="@+id/text_message_time_r"
             android:text="11:40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
