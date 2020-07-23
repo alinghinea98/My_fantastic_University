@@ -1,9 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MyProfileActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_profile"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imagine_profil"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/profile_icon" />
+
+            <TextView
+                android:id="@+id/numeutilizator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imagine_profil"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/Nume_utilizator"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/alege_poze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/imagine_profil"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_add_circle_outline_green"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/setari"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/numeutilizator"
+                android:layout_marginTop="40dp"
+                android:background="@color/transparent"
+                android:drawableStart="@drawable/ic_baseline_settings_24"
+                android:drawablePadding="-15dp"
+                android:text="@string/Setari" />
+
+            <Button
+                android:id="@+id/notificari"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setari"
+                android:layout_marginTop="20dp"
+                android:background="@color/transparent"
+                android:drawableStart="@drawable/ic_baseline_notifications_24"
+                android:drawablePadding="-25dp"
+                android:text="@string/notificatii" />
+
+            <Button
+                android:id="@+id/add"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/notificari"
+                android:layout_marginTop="20dp"
+                android:background="@color/transparent"
+                android:drawableStart="@drawable/ic_baseline_add_24"
+                android:drawablePadding="-10dp"
+                android:text="@string/Adauga_cont" />
+
+            <Button
+                android:id="@+id/help"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add"
+                android:layout_marginTop="20dp"
+                android:background="@color/transparent"
+                android:drawableStart="@drawable/ic_baseline_help_24"
+                android:drawablePadding="-35dp"
+                android:text="@string/ajutor" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/help"
+                android:layout_marginTop="60dp"
+                android:background="@color/transparent"
+                android:drawableTop="@drawable/ic_baseline_exit_to_app_24"
+                android:text="@string/Logout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
