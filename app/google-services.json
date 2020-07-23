@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "102717430818",
+    "firebase_url": "https://ibmsummerschool2020-fb37e.firebaseio.com",
+    "project_id": "ibmsummerschool2020-fb37e",
+    "storage_bucket": "ibmsummerschool2020-fb37e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102717430818:android:ef53da524db4db227afe7b",
+        "android_client_info": {
+          "package_name": "ro.ibm.summerschool.myfantasticuniversity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102717430818-as3teie4a4eisrkqkf6l3fes0bkrv7k7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ro.ibm.summerschool.myfantasticuniversity",
+            "certificate_hash": "f578ad76f2a68d600ee85930ebd94b8c099fd3ec"
+          }
+        },
+        {
+          "client_id": "102717430818-g38dbadk6uegsrf8muoajreriivlgrv7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACkpmq2oCSK8qrq_jGXiakIK-gBlv8Ueo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102717430818-g38dbadk6uegsrf8muoajreriivlgrv7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
