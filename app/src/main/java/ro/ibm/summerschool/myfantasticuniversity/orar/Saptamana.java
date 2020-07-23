@@ -10,6 +10,10 @@ public class Saptamana {
         this.numarSaptamana = numarSaptamana;
     }
 
+    public Saptamana() {
+
+    }
+
     public String getNumeZi() {
         return numeZi;
     }
@@ -24,5 +28,14 @@ public class Saptamana {
 
     public void setNumarSaptamana(String numarSaptamana) {
         this.numarSaptamana = numarSaptamana;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Saptamana{" +
+                "numeZi='" + numeZi + '\'' +
+                ", numarSaptamana='" + numarSaptamana + '\'' +
+                '}';
     }
 }
