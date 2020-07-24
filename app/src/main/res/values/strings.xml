@@ -59,4 +59,14 @@
     <string name="week_number_placeholder">Saptamana 27</string>
     <string name="Welcome">Welcome</string>
     <string name="Unitbv">UNITBV</string>
+    <string name="register">REGISTER</string>
+    <string name="already_have_an_account">Already have an account?</string>
+
+    <string name="input_error_name">Name required</string>
+    <string name="input_error_email">Email required</string>
+    <string name="input_error_password">Eassword required</string>
+    <string name="input_error_password_length">Password should be at least 6 characters long</string>
+    <string name="input_error_email_invalid">Enter a valid email</string>
+    <string name="registration_success">Registered Successfully</string>
+
 </resources>

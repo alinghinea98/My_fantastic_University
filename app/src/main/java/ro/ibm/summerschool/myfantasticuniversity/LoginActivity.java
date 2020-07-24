@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -24,7 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText usernameEditText;
     private EditText passwordEditText;
     private Button loginBtn;
-
+    private TextView createAccount;
     private FirebaseAuth mAuth;
 
     @Override
@@ -44,6 +45,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 loginUser();
+            }
+        });
+
+        createAccount=findViewById(R.id.createAccount);
+        createAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToRegisterPage();
             }
         });
 
@@ -78,5 +87,9 @@ public class LoginActivity extends AppCompatActivity {
         finish();
         startActivity(intent);
 
+    }
+    private void goToRegisterPage(){
+        Intent intentToRegisterPage = new Intent(LoginActivity.this,RegisterActivity.class);
+        startActivity(intentToRegisterPage);
     }
 }
