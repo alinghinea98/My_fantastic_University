@@ -12,6 +12,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 
+import ro.ibm.summerschool.myfantasticuniversity.map.MapActivity;
 import ro.ibm.summerschool.myfantasticuniversity.orar.OrarActivity;
 
 
@@ -71,6 +72,19 @@ public class DashboardActivity extends AppCompatActivity {
                 goToProfile();
             }
         });
+
+        CardView cardViewMap = findViewById(R.id.cardviewMap);
+        cardViewMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToMap();
+            }
+        });
+    }
+
+    private void goToMap(){
+        Intent intentMap = new Intent(DashboardActivity.this, MapActivity.class);
+        startActivity(intentMap);
     }
 
     private void goToExams() {
