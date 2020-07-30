@@ -2,6 +2,7 @@ package ro.ibm.summerschool.myfantasticuniversity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.TaskStackBuilder;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,5 +30,35 @@ public class LoginActivity extends AppCompatActivity {
         finish();
         startActivity(intent);
 
+
+
     }
+
+   /* @Override
+    protected void onStart() {
+        super.onStart();
+        if(mAuth.getCurrentUser() !=null)
+        {
+            finish();
+            startActivity(new Intent(this, MyProfileActivity.class));
+        }
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch(view,getTaskId())
+        {
+            case R.id.textViewLoginActivity:
+                finish();
+                startActivity( new Intent(this, LoginActivity.class));
+                break;
+
+                case R.id buttonLogin:
+                    userLogin();
+                    break;
+        }
+
+        super.onPrepareNavigateUpTaskStack(builder);
+    }*/
 }
